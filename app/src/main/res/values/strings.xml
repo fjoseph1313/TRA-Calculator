@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">TRA Calculator</string>
+
+    <string name="car_make_prompt">Select Make</string>
+    <string-array name="car_make_arrays">
+        <item>Audi</item>
+        <item>BMW</item>
+        <item>Mercedes</item>
+    </string-array>
+
+    <string name="engine_capacity_prompt">Select CC</string>
+    <string-array name="engine_capacity_arrays">
+        <item>500cc - 1000cc</item>
+        <item>1001cc - 1500cc</item>
+        <item>1501cc - 2000cc</item>
+        <item>2001cc - 2500cc</item>
+        <item>Above 2500cc</item>
+    </string-array>
 </resources>
