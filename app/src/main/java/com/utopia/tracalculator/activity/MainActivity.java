@@ -1,5 +1,6 @@
-package com.utopia.tracalculator;
+package com.utopia.tracalculator.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +9,11 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.utopia.tracalculator.R;
+
 public class MainActivity extends AppCompatActivity {
 
-
+    public static final String TAX_SUMMARY = "TAX_SUMMARY";
     private Spinner yomSpinner, carMakeSpinner, engCapacitySpinner, fuelTypeSpinner, carModelSpinner;
     private Button calcButton;
     private String[] years = {"1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993","1994","1995","1996","1997","1998",
@@ -68,6 +71,10 @@ public class MainActivity extends AppCompatActivity {
                         carMakeSpinner.getSelectedItem().toString(), carModelSpinner.getSelectedItem().toString(), engCapacitySpinner.getSelectedItem().toString(),
                         fuelTypeSpinner.getSelectedItem().toString());
                 Toast.makeText(MainActivity.this, tosted, Toast.LENGTH_SHORT).show();
+                //Launch Details activity
+                Intent intent = new Intent(getApplicationContext(), TaxDetailsActivity.class);
+                intent.putExtra(TAX_SUMMARY, tosted);
+                startActivity(intent);
             }
         });
     }
