@@ -16,4 +16,10 @@
         <item>2001cc - 2500cc</item>
         <item>Above 2500cc</item>
     </string-array>
+
+    <string name="fuel_type_prompt">Fuel Type</string>
+    <string-array name="fuel_type_arrays">
+        <item>Gasoline</item>
+        <item>Diesel</item>
+    </string-array>
 </resources>
