@@ -1,7 +1,11 @@
 package com.utopia.tracalculator.service;
 
+import com.utopia.tracalculator.Model.Depreciation;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by fjoseph1313 on 12/17/2016.
@@ -14,6 +18,9 @@ public class VehicleService {
     private static final BigDecimal VAT = new BigDecimal(0.18);
     private static final BigDecimal RAILWAY_LEVY_DEV = new BigDecimal(0.015);
     private static final BigDecimal CUSTOM_FEES = new BigDecimal(0.005);
+    private static final List<Depreciation> depriciations = Arrays.asList(new Depreciation(0, 10), new Depreciation(1, 15), new Depreciation(2, 20), new Depreciation(3, 25),
+            new Depreciation(4, 30), new Depreciation(5, 35), new Depreciation(6, 40), new Depreciation(7, 50), new Depreciation(8, 60), new Depreciation(9, 70),
+            new Depreciation(10, 80));
 
     /**
      * CIF amount depends on depreciation of the car, from the original amount.

@@ -21,10 +21,10 @@ public class VehicleServiceTest {
         vehicleService = new VehicleService();
     }
 
-    @Test
-    public void testComputeExciseDuty() throws Exception{
-        BigDecimal amt = vehicleService.computeExciseDuty(new BigDecimal(1000), "2001cc - 2500cc");
-        Assert.assertNotNull(amt);
-        Assert.assertEquals("100", amt.toString());
-    }
+//    @Test
+//    public void testComputeExciseDuty() throws Exception{
+//        BigDecimal amt = vehicleService.computeExciseDuty(new BigDecimal(1000), "2001cc - 2500cc");
+//        Assert.assertNotNull(amt);
+//        Assert.assertEquals("100", amt.toString());
+//    }
 }

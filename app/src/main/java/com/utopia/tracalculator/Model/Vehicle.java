@@ -12,6 +12,7 @@ public class Vehicle implements Serializable{
     private Long id;
     private String make;
     private String model;
+    private VehicleMake vehicleMake;
     private Long yearOfManufacture;
     private String fuel;
     private String engineCapacity;
@@ -101,6 +102,14 @@ public class Vehicle implements Serializable{
 
     public void setVehicleCategory(VehicleCategory vehicleCategory) {
         this.vehicleCategory = vehicleCategory;
+    }
+
+    public VehicleMake getVehicleMake() {
+        return vehicleMake;
+    }
+
+    public void setVehicleMake(VehicleMake vehicleMake) {
+        this.vehicleMake = vehicleMake;
     }
 
     public Builder copyBuilder(){

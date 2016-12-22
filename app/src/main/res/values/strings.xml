@@ -22,4 +22,7 @@
         <item>Gasoline</item>
         <item>Diesel</item>
     </string-array>
+
+    <string name="radio_gas">Gasoline</string>
+    <string name="radio_diesel">Diesel</string>
 </resources>
